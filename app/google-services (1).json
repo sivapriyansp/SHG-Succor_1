@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "876563819821",
+    "firebase_url": "https://shg-succor1.firebaseio.com",
+    "project_id": "shg-succor1",
+    "storage_bucket": "shg-succor1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876563819821:android:ea7d164436582f527537a4",
+        "android_client_info": {
+          "package_name": "com.med.shg_succor_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876563819821-crro2hu1kbs5tc559jann0gs87cok1c7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.med.shg_succor_1",
+            "certificate_hash": "c30469ee73a84d860ed544ed5d5acc65ceab70c6"
+          }
+        },
+        {
+          "client_id": "876563819821-0nkl1kdqge9kf434vlgbmmch53gdmpjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRRIET8IT4AT5Fo5qa6El038Rg6ibtF2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876563819821-0nkl1kdqge9kf434vlgbmmch53gdmpjb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
