@@ -1,52 +1,67 @@
 package com.med.shg_succor_1;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
-import static com.med.shg_succor_1.R.id.btn1;
+public class Dashboard extends AppCompatActivity implements View.OnClickListener {
 
-public class Dashboard extends AppCompatActivity {
+    public Button b1, b2, b3, b4,b5,b6;
 
-   //public CardView c1,c2,c3,c4,c5,c6;implements View.OnClickListener
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
-/*
-       c1 = (CardView) findViewById(R.id.btn1);
-       c2 = (CardView) findViewById(R.id.btn2);
-       c3 = (CardView) findViewById(R.id.btn3);
-       c4 = (CardView) findViewById(R.id.btn4);
-       c5 = (CardView) findViewById(R.id.btn5);
-       c6 = (CardView) findViewById(R.id.btn6);
+        setContentView(R.layout.activity_main);
 
-       c1.setOnClickListener(this);
-       c2.setOnClickListener(this);
-       c3.setOnClickListener(this);
-       c4.setOnClickListener(this);
-       c5.setOnClickListener(this);
-       c6.setOnClickListener(this);
-      }
+        b1 = findViewById(R.id.btn1);
+        b2 = findViewById(R.id.btn2);
+        b3 = findViewById(R.id.btn3);
+        b4 = findViewById(R.id.btn4);
+        b5 = findViewById(R.id.btn5);
+        b6 = findViewById(R.id.btn6);
+
+        b1.setOnClickListener(this);
+        b2.setOnClickListener(this);
+        b3.setOnClickListener(this);
+        b4.setOnClickListener(this);
+        b5.setOnClickListener(this);
+        b6.setOnClickListener(this);
+
+    }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
         Intent i;
-        switch (v.getId()){
-            case btn1:
-            i = new Intent(this,Editprofile.class);
-            startActivity(i);
-            break;
 
-}
-*/
-
-
+        switch (view.getId()) {
+            case R.id.btn1 :
+                i = new Intent(this, Editprofile.class);
+                startActivity(i);
+                break;
+            case R.id.btn2 :
+                i = new Intent(this, Memberslist_p.class);
+                startActivity(i);
+                break;
+            case R.id.btn3 :
+                i = new Intent(this, Loan.class);
+                startActivity(i);
+                break;
+            case R.id.btn4:
+                i = new Intent(this, Transactionp.class);
+                startActivity(i);
+                break;
+            case R.id.btn5 :
+                i = new Intent(this, Report.class);
+                startActivity(i);
+                break;
+            case R.id.btn6:
+                i = new Intent(this, Settings.class);
+                startActivity(i);
+                break;
         }
 
     }
+}
